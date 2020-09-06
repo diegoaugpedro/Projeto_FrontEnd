@@ -1,1 +1,1 @@
-Projeto Front End - Pós Graduação
+Projeto Front-End - Pós Graduação
