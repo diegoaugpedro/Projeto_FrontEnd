@@ -8,20 +8,22 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	height: 100%;
     background: url(../img/bg.jpg);
-    color: white;
-    text-shadow: 2px 2px black;
 }
 
 header { 
-    background-color: #147a53; 
+    background-color: rgba(135, 206, 235, 0.9); 
     padding: 1vh 1vw; 
-    height: 10vh; 
+    height: 14vh; 
     box-sizing: border-box; 
-    color: #fff; 
+    border-radius: 2%;
+    margin-bottom: 5px;
 } 
 
 h1 {
     text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    color: #fff; 
 }
 
 .moldura {
@@ -30,7 +32,7 @@ h1 {
     height: 483px;
     box-sizing: border-box;
     border: 1px solid black;
-    background-color: gray;
+    background-color:rgba(190, 190, 190, 0.9);
 }
 
 .lateral {
@@ -39,7 +41,7 @@ h1 {
     height: 483px; 
     box-sizing: border-box;
     border: 1px solid black;
-    background-color: gray;
+    background-color:rgba(190, 190, 190, 0.9);
 }
 
 /*--- Imagem captura ---*/
@@ -51,6 +53,6 @@ h1 {
 /*--- Botão de captura da imagem ---*/
 #capturar {
     font-size: large;
-    align: center;
+    margin-top: 5px;
 }
 }
