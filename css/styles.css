@@ -1,9 +1,24 @@
+/*--- Código mobile-first fora da media query ---*/
+
+
+
+/*--- Código desktop dentro da media query ---*/
+@media (min-width: 992px) {
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	height: 100%;
     background: url(../img/bg.jpg);
     color: white;
+    text-shadow: 2px 2px black;
 }
+
+header { 
+    background-color: #147a53; 
+    padding: 1vh 1vw; 
+    height: 10vh; 
+    box-sizing: border-box; 
+    color: #fff; 
+} 
 
 h1 {
     text-align: center;
@@ -36,4 +51,6 @@ h1 {
 /*--- Botão de captura da imagem ---*/
 #capturar {
     font-size: large;
+    align: center;
+}
 }

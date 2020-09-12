@@ -2,75 +2,44 @@
 <html class="no-js" lang="pt-BR">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto - Front_End</title>
+
   <link rel="stylesheet" href="css/styles.css">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!--<link rel="stylesheet" href="css/main.css">-->
 
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
   <header>
-    <h1>Título da sua página ou WEBAPP</h1>
-    <nav>Menu de navegação principal</nav>
+    <h1>WebPicture</h1>
   </header>
 
-  <main>
-    <section class="main-feature"> Seu conteúdo ou feature principal vem aqui
-
-      <h1>WebPicture</h1>
-
-      <main class="principal">
-        <section class="moldura">
-          <video id="video" autoplay>Libere o acesso a sua câmera!</video>
-        </section>
-      </main>
-
-      <aside class="lateral">
-        <canvas id="canvas" width="640" height="480">Preview</canvas>
-      </aside>
-
-      <footer class="rodape">
-        <section class="controle">
-          <button id="capturar">Capturar imagem</button>
-        </section>
-      </footer>
-
-      <script src="js/app.js"></script>
-
+  <main class="principal">
+    <section class="moldura">
+      <video id="video" autoplay></video>
     </section>
-    <aside class="secundary-feature"> Algum conteúdo ou feature não-principal de apoio </aside>
   </main>
 
-  <footer> Informações gerais, recursos secundários de apoio, nome do autor. </footer>
+  <aside class="lateral">
+    <canvas id="canvas" width="640" height="480"></canvas>
+  </aside>
+  
+  <footer class="rodape">
+    <section class="controle">
+      <button id="capturar">Capturar imagem</button>
+    </section>
+  </footer>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!-- Scripts JS -->
+  <script src="js/app.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
