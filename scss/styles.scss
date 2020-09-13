@@ -1,0 +1,14 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: url(../img/bg.jpg);
+}
+@import "_mobile.scss";
+@import "_desktop.scss";

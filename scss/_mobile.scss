@@ -1,0 +1,63 @@
+.l-cabecalho { 
+    background-color: rgba(135, 206, 235, 0.9); 
+    box-sizing: border-box; 
+    border-radius: 2%;
+    margin-bottom: 5px;
+    position: relative;
+} 
+
+.image {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.title {
+    text-shadow: 2px 2px black;
+    color: #fff;
+}
+
+.moldura {
+    position: relative;
+    width: 320px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color:rgba(190, 190, 190, 0.9);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.l-lateral {
+    position: relative;
+    width: 320px;
+    height: 240px; 
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color:rgba(190, 190, 190, 0.9);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/*--- Imagem a ser capturada ---*/
+#video {
+    width: 320px;
+    height: 240px;
+}
+
+#canvas {
+    width: auto;
+    height: 240px;
+}
+
+/*--- Botão de captura da imagem ---*/
+#capturar {
+    font-size: large;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    background-color: rgba(15, 206, 15, 0.8);
+    border: 1.5px solid black;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px white;
+}
