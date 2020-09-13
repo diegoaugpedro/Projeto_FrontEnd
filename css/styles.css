@@ -1,8 +1,74 @@
-/*--- Código mobile-first fora da media query ---*/
+/*--- Código mobile-first CSS ---*/
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	height: 100%;
+    background: url(../img/bg.jpg);
+}
 
+header { 
+    background-color: rgba(135, 206, 235, 0.9); 
+    box-sizing: border-box; 
+    border-radius: 2%;
+    margin-bottom: 5px;
+    position: relative;
+} 
 
+img {
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
-/*--- Código desktop dentro da media query ---*/
+h1 {
+    text-shadow: 2px 2px black;
+    color: #fff;
+}
+
+.moldura {
+    position: relative;
+    width: 320px;
+    height: 240px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color:rgba(190, 190, 190, 0.9);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.lateral {
+    position: relative;
+    width: 320px;
+    height: 240px; 
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color:rgba(190, 190, 190, 0.9);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/*--- Imagem a ser capturada ---*/
+#video {
+    width: 320px;
+    height: 240px;
+}
+
+#canvas {
+    width: auto;
+    height: 240px;
+}
+
+/*--- Botão de captura da imagem ---*/
+#capturar {
+    font-size: large;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    background-color: rgba(15, 206, 15, 0.8);
+    border: 1px solid rgba(15, 206, 15, 0.4);
+    border-radius: 5%;
+}
+
+/*--- Código desktop CSS ---*/
 @media (min-width: 992px) {
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -16,14 +82,14 @@ header {
     height: 14vh; 
     box-sizing: border-box; 
     border-radius: 2%;
-    margin-bottom: 5px;
 } 
 
 h1 {
     text-align: center;
     font-size: 40px;
     text-shadow: 2px 2px black;
-    color: #fff; 
+    color: #fff;
+    position: relative;
 }
 
 .moldura {
@@ -44,8 +110,14 @@ h1 {
     background-color:rgba(190, 190, 190, 0.9);
 }
 
-/*--- Imagem captura ---*/
+/*--- Imagem a ser capturada ---*/
 #video {
+    width: 640px;
+    height: 480px;
+}
+
+/*--- Imagem capturada ---*/
+#canvas {
     width: 640px;
     height: 480px;
 }

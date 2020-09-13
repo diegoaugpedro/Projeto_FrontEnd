@@ -25,6 +25,7 @@ function handleSucess(picture) {
 init();
 
 var context = canvas.getContext('2d');
+
 capturar.addEventListener("click", function() {
     context.drawImage(video, 0, 0, 640, 480);
 });
