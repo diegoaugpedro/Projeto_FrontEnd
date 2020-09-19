@@ -1,6 +1,13 @@
 const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const capturar = document.getElementById('capturar');
+var username = window.prompt("Olá, qual é o seu nome?")
+
+//Using Map Object
+var myMap = new Map();
+var keyString = username;
+myMap.set(keyString, `Bem-Vindo ${username}, para usar nosso app ative sua câmera!`)
+alert(myMap.get(keyString));
 
 const tela = {
     video: {
