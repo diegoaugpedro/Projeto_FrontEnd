@@ -6,7 +6,7 @@ var username = window.prompt("Olá, qual é o seu nome?")
 //Using Map Object
 var myMap = new Map();
 var keyString = username;
-myMap.set(keyString, `Bem-Vindo ${username}, para usar nosso webapp ative sua câmera!`)
+myMap.set(keyString, `Bem-Vindo ao nosso webapp!`)
 alert(myMap.get(keyString));
 
 const tela = {
