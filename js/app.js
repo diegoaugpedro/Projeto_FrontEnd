@@ -36,3 +36,9 @@ var context = canvas.getContext('2d');
 capturar.addEventListener("click", function() {
     context.drawImage(video, 0, 0, 640, 480);
 });
+
+//Using Destructuring assignment
+const infoPhotos = {name: username, photo: context};
+let {photo, name} = infoPhotos;
+console.log(name);
+console.log(photo);
