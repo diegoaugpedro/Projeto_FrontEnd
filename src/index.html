@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Princípio 03 - Compreensível - Definição da linguagem -->
 <html class="no-js" lang="pt-BR">
 
 <head>
@@ -10,18 +11,20 @@
 </head>
 
 <body>
-
+  <!-- Princípio 04 - Robusto - Estruturação semantica do HTML -->
   <header class="l-cabecalho">
-    <h1 class="title"><img class="image" src="../src/img/camera.png" title="WEBPICTURE"/> WEBPICTURE</h1>
+    <!-- Princípio 01 - Perceptível - Atributo ALT na imagem -->
+    <h1 class="title"><img class="image" src="../src/img/camera.png" title="WEBPICTURE" alt="Imagem representando uma câmera digital"/> WEBPICTURE</h1>
   </header>
 
   <nav class="l-navegacao">
     <section class="controle">
-      <button id="capturar">CAPTURAR</button>
+      <!-- Princípio 02 - Operável - Recursos nativos HTML (Button) com propriedade AUTOFOCUS -->
+      <button id="capturar" autofocus>CAPTURAR IMAGEM</button>
     </section>
   </nav>
-
-  <main class="l-principal">
+<!-- Princípio 02 - Operável - Recursos nativos HTML (Button) com propriedade AUTOFOCUS -->
+  <main role="navigation" aria-labelledby="main1" class="l-principal">
     <section class="moldura">
       <video id="video" autoplay></video>
     </section>
@@ -33,7 +36,13 @@
 
   <!--Scripts JS -->
   <script src="../dist/js/app.js"></script>
-
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+    }
+    </script>
 </body>
 
 </html>
